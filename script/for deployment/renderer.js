@@ -1,7 +1,7 @@
 //IMPORTS
-import * as rest from "/script/rest.js";
-import * as tools from "/script/tools.js";
-import * as employee from "/script/employee-template.js";
+import * as rest from "/ca/js/Js10/script/rest.js";
+import * as tools from "/ca/js/Js10/script/tools.js";
+import * as employee from "/ca/js/Js10/script/employee-template.js";
 
 const renderUserProfile = (user) => {
   const firstName = user.employee_name.split(" ")[0];
@@ -54,7 +54,7 @@ const renderUserRow = (user) => {
 
   let tdEdit = document.createElement("td");
   tdEdit.classList.add("manipulate");
-  tdEdit.innerHTML = `<i class="fas fa-edit"></i>`; // ✎
+  tdEdit.innerHTML = `<i class="fas fa-edit"></i>`;  // ✎
   tdEdit.setAttribute("id", user.id);
   tdEdit.addEventListener("click", (e) => {
     tools.clearErrorLabels();
@@ -64,7 +64,7 @@ const renderUserRow = (user) => {
 
   let tdDelete = document.createElement("td");
   tdDelete.classList.add("manipulate");
-  tdDelete.innerHTML = "✖"; // ✖
+  tdDelete.innerHTML = "✖";  // ✖
   tdDelete.addEventListener("click", (e) => {
     tools.clearErrorLabels();
     rest.deleteUser(user.id);
@@ -72,7 +72,7 @@ const renderUserRow = (user) => {
 
   let tdLike = document.createElement("td");
   tdLike.classList.add("manipulate");
-  tdLike.innerHTML = `<i class="fas fa-heart"></i>`; // ❤
+  tdLike.innerHTML = `<i class="fas fa-heart"></i>`;  // ❤
   renderLikeStatus(user, tdLike);
   tdLike.addEventListener("click", () => {
     tools.clearErrorLabels();
@@ -113,7 +113,7 @@ const renderEditableUserRow = (user) => {
 
   // Like icon place holder
   let likeIconCell = document.createElement("td");
-  likeIconCell.innerHTML = `<i class="fas fa-heart"></i>`; // ❤
+  likeIconCell.innerHTML = `<i class="fas fa-heart"></i>`;  // ❤
   likeIconCell.style.width = "0px";
   likeIconCell.style.color = "white";
   likeIconCell.style.backgroundColor = "rgb(245, 245, 245)";

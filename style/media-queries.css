@@ -15,7 +15,11 @@
   }
 
   table {
-    width: 100%;
+    width: 90%;
+  }
+
+  th, td, form {
+    font-size: small;
   }
 
   button {
