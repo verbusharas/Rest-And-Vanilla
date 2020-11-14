@@ -1,0 +1,29 @@
+table {
+    width: 50%;
+    margin: 10px;
+  }
+  
+  table,
+  th,
+  td {
+    border-collapse: collapse;
+    border-bottom: 1px solid white;
+    padding: 10px;
+  }
+  
+  
+  .table-header {
+    background-color: var(--grey-header);
+    color: white;
+  }
+
+  td {
+    background-color: var(--grey-form-rows);
+    color: var(--grey-text);
+    width: 30%;
+  }
+
+  table tr:hover td {
+    background-color:  var(--grey-manipulate);
+    cursor: pointer;
+  }

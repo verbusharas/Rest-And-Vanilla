@@ -1,0 +1,71 @@
+@import "colors.css";
+@import "forms.css";
+@import "table.css";
+@import "modifiers.css";
+@import "media-queries.css";
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  margin: 20px;
+  color: var(--blue);
+}
+
+a {
+  text-decoration: none;
+  margin-top: 10px;
+  color: var(--blue);
+  font-size: small;
+}
+
+h5 {
+  font-weight: normal;
+}
+
+p {
+  margin: 5px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.registration-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  margin: 10px;
+  justify-content: start;
+}
+
+.loader-container {
+  margin-top: 10px;
+  height: 30px;
+}
+
+.loader {
+  width: 100px;
+  height: 30px;
+  object-fit: cover;
+}
+
+.employee {
+  background-color: var(--grey-manipulate);
+}
+
+.employee-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: right;
+  color: var(--grey-text);
+}
+
+.employee-logo {
+  height: 150px;
+  margin: 20px;
+}

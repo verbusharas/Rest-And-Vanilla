@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;600&display=swap" rel="stylesheet">
+    <title>Rest & Vanilla</title>
+</head>
+
+<body>
+    <h1>REST & VANILLA</h1>
+    <div class="container">
+
+        <form>
+            <div class="registration-container">
+                <label for="fname">Vardas</label>
+                    <input class="input" type="text" id="fname" name="fname">
+            </div>
+            <div class="registration-container">
+                <label for="lname">Pavardė</label>
+                    <input class="input" type="text" id="lname" name="lname">
+            </div>
+            <div class="registration-container">
+                <label for="lname">Amžius</label>
+                    <input class="input" type="number" id="age" name="lname">
+            </div>
+            <div class="registration-container">
+                <button class="nudge-down" type="submit" id="bt-prideti">Pridėti</button>
+            </div>
+        </form>
+    </div>
+    <div class="container loader-container">
+        <p id="important-message" class="error-text not-displayed">Klaidos tekstas</p>
+        <img class="loader hidden" src="images/loader3.gif" alt="loader">
+    </div>
+
+    <div class="container">
+        <table>
+            <tr>
+                <th></th>
+                <th class="table-header">VARDAS</th>
+                <th class="table-header dark">PAVARDĖ</th>
+                <th class="table-header">AMŽIUS</th>
+            </tr>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="script/main.js"></script>
+    <script type="module" src="script/rest.js"></script>
+    <script type="module" src="script/tools.js"></script>
+    <script type="module" src="script/renderer.js"></script>
+    <script type="module" src="script/employee-template.js"></script>
+
+</body>
+
+</html>

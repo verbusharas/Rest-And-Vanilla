@@ -1,0 +1,10 @@
+:root {
+    --blue: rgb(97, 95, 226);
+    --editable-row: rgb(226, 226, 236);
+    --grey-manipulate: rgb(245, 245, 245);
+    --grey-form-rows:  rgb(240, 240, 240);
+    --grey-icons: rgb(220, 220, 220);
+    --grey-header: rgb(200, 200, 200);
+    --grey-header-dark: rgb(190, 190, 190);
+    --grey-text: rgb(120, 120, 120);
+  }

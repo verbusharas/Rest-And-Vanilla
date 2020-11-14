@@ -1,0 +1,51 @@
+form {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    color: var(--grey-text);
+    background-color: var(--grey-form-rows);
+    height: auto;
+    padding-bottom: 15px;
+  }
+
+  label {
+    margin-bottom: 5px;
+  }
+  
+  input {
+    border: 1px solid var(--grey-header-dark);
+    border-radius: 4px;
+    padding-left: 10px;
+    height: 35px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  input, select, textarea{
+      color: var(--grey-text);
+  }
+
+  input:focus {
+    outline: none;
+    border:1px solid var(--blue);
+  }
+  
+  input:-webkit-autofill {
+      -webkit-text-fill-color: var(--grey-text);
+      -webkit-box-shadow: 0 0 0 30px white inset;
+  }
+
+  button {
+    height: 35px;
+    width: 100px;
+    background-color: var(--blue);
+    border-style: none;
+    color: white;
+    margin-left: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    opacity: 80%;
+  }

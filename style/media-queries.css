@@ -1,0 +1,29 @@
+@media screen and (max-width: 1300px) {
+  form {
+    width: 80%;
+  }
+
+  table {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  form {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  button {
+      width: 100%;
+  }
+
+  .nudge-down {
+    margin-top: 0px;
+  }
+  
+}

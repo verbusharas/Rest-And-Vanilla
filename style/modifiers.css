@@ -1,0 +1,47 @@
+.nudge-down {
+    margin-top: 25px;
+  }
+
+  .editable-cell {
+    background-color: var(--editable-row);
+    color: white;
+  }
+
+  .dark {
+    background-color: var(--grey-header-dark);
+  }
+
+  .hidden {
+    visibility: hidden;
+  }
+  
+  .not-displayed {
+    display: none;
+  }
+
+  .disable {
+    pointer-events: none;
+  }
+
+  
+.error-text {
+  color: var(--blue);
+  font-weight: bold;
+  font-size: small;
+}
+
+.manipulate {
+  background-color: var(--grey-manipulate);
+  border-style: none;
+  color: var(--grey-icons);
+  width: 5px;
+}
+
+.manipulate:hover {
+  color: var(--blue);
+  cursor: pointer;
+}
+
+.switched-on {
+  color: var(--blue);
+}
